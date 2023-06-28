@@ -6,9 +6,11 @@ import Messages from './Messages';
 import Cam from "../../img/cam.png";
 import Add from "../../img/add.png";
 import More from "../../img/more.png";
-import Char1 from "../../img/addAvatar.png"
+import { useContext } from 'react'
+import { AuthContext } from '../../context/AuthContext'
 
 export default function Chat() {
+  const {user}= useContext(AuthContext)
   // const [messages,setMessages]= useState([]);
   // const [newMessage,setNewMessage] = useState([]);
 
@@ -43,9 +45,9 @@ export default function Chat() {
     <div className='chat'>
         <div className="chatnav">
         <div className='chattop'>
-          <div style={{gap:'20px', display:"flex"}}>
-             <img src={Char1}  />
-            <span>Name</span>
+          <div className='userprofile'>
+            <img src={user.photoURL} className='profileImage' />
+            <span>{user.displayName}</span>
           </div>
        
         <div className="chatIcons">

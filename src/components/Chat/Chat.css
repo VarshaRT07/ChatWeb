@@ -16,6 +16,13 @@
 .chattop{
     display: flex;
     justify-content: space-between;
+    
+}
+.userprofile{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .chat .messages{
@@ -40,13 +47,17 @@ input {
   }
 .chatIcons {
     display: flex;
-    gap: 10px;
-
-   
+    gap: 10px;  
   } 
-  img {
-      height: 24px;
-      cursor: pointer;
+
+  .chatIcons img{
+    height: 33px;
+  }
+    .profileImage{
+      height: 40px;
+      width: 43px;
+      border-radius: 50%;
+      
     }
 .messages {
         background-color: #ddddf7;

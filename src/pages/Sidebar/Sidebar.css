@@ -44,9 +44,9 @@ button{
     gap: 50px;
    
 }
-.userinfo img{
-    height: 33px;
-    width: 33px;
+.userinfo img, .user img{
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
 
 }
